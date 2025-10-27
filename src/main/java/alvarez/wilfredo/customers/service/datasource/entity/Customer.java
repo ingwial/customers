@@ -31,8 +31,8 @@ public class Customer implements Persistable<Long> {
     @Override
     public boolean isNew() {
         if (this.id == null) {
-            var ramdomId = new Random().nextLong(99999999);
-            this.setId(ramdomId);
+            var randomId = new Random().nextLong(99999999);
+            this.setId(randomId);
             return true;
         }
         return false;
